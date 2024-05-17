@@ -9,8 +9,8 @@ const getMusicData = async (req, res, next) => {
             id: 'music1',
             title: 'As You Were - TrackTribe',
             artist: 'TrackTribe',
-            thumbnail: 'http://localhost:3002/images/img01.jpg',
-            src: 'http://localhost:3002/images/sample4.m4a'
+            thumbnail: `${process.env.DOMAIN}/images/img01.jpg`,
+            src: `${process.env.DOMAIN}/images/sample4.m4a`
         };
 
         const response = {
